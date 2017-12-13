@@ -1,0 +1,46 @@
+{
+    "msg": "处理成功",
+    "context": [
+        {
+            "cnt": 55436,
+            "dayCnt": 2888,
+            "industryName": "电商/团购",
+            "oneIndustry": "001"
+        },
+        {
+            "cnt": 34430,
+            "dayCnt": 5000,
+            "industryName": "时尚",
+            "oneIndustry": "002"
+        },{
+            "cnt": 4000,
+            "dayCnt": 3000,
+            "industryName": "生活/家居",
+            "oneIndustry": "003"
+        },
+        {
+            "cnt": 4000,
+            "dayCnt": 3000,
+            "industryName": "生活/家居",
+            "oneIndustry": "003"
+        },{
+            "cnt": 4000,
+            "dayCnt": 3000,
+            "industryName": "生活/家居",
+            "oneIndustry": "003"
+        },
+        {
+            "cnt": 4000,
+            "dayCnt": 3000,
+            "industryName": "生活/家居",
+            "oneIndustry": "003"
+        },
+        {
+            "cnt": 4000,
+            "dayCnt": 3000,
+            "industryName": "生活/家居",
+            "oneIndustry": "003"
+        }
+    ],
+    "isSuccess": true
+}

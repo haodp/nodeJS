@@ -1,0 +1,62 @@
+{
+    "msg": "处理成功",
+    "context": [
+        {
+            "amt": 2231.231,
+            "cnt": 2,
+            "fee": 22312310,
+            "mername": "互融金融",
+            "storeid": "DOPCHN000631"
+        },
+        {
+            "amt": 97.310,
+            "cnt": 7,
+            "fee": 973104,
+            "mername": "平安银行",
+            "storeid": "DOPCHN000510"
+        },
+        {
+            "amt": 2.736,
+            "cnt": 1,
+            "fee": 27360,
+            "mername": "阳光保险",
+            "storeid": "DOPCHN000348"
+        },
+        {
+            "amt": 2.185,
+            "cnt": 4,
+            "fee": 21855,
+            "mername": "yuansfer",
+            "storeid": "COPALB000306"
+        },
+        {
+            "amt": 0.600,
+            "cnt": 1,
+            "fee": 6000,
+            "mername": "汇积天下",
+            "storeid": "DOPCHN000481"
+        },
+        {
+            "amt": 0.135,
+            "cnt": 9,
+            "fee": 1350,
+            "mername": "发薪贷",
+            "storeid": "DOPCHN000666"
+        },
+        {
+            "amt": 0.043,
+            "cnt": 2,
+            "fee": 431,
+            "mername": "三路金融",
+            "storeid": "DOPCHN000612"
+        },
+        {
+            "amt": 0.020,
+            "cnt": 2,
+            "fee": 202,
+            "mername": "上海富盛",
+            "storeid": "DOPCHN000069"
+        }
+    ],
+    "isSuccess": true
+}

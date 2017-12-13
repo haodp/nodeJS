@@ -1,0 +1,35 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+    background-color: #262A42;
+    color: #C7CCE6;
+    overflow-x: hidden;
+}
+
+.row {
+    padding: 0 20px;
+}
+.component {
+    padding: 2em;
+    .component-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 0 0 10px 10px;
+    }
+
+    .component-container {
+        background-color: #202437;
+        box-shadow: 0 0 5px #000;
+        table {
+            background: null;
+
+            td, th {
+                border: none;
+            }
+        }
+        .table-striped>tbody>tr:nth-of-type(odd) {
+            background-color: #262A42;//#3e477b;
+        }
+    }
+}

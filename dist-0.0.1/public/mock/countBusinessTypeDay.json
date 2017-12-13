@@ -1,0 +1,34 @@
+{
+    "msg": "处理成功",
+    "context": [
+        {
+            "amt": 45.0,
+            "industryName": "电商/团购",
+            "oneIndustry": "001",
+            "per": "50.00%"
+        },
+        {
+            "amt": 26.8,
+            "industryName": "工资",
+            "oneIndustry": "002",
+            "per": "50.00%"
+        },
+        {
+            "amt": 12.8,
+            "industryName": "测试",
+            "oneIndusty": "003",
+            "per": "12.8%"
+        },{
+            "amt": 8.5,
+            "industryName": "测试",
+            "oneIndusty": "003",
+            "per": "8.5%"
+        },{
+            "amt": 6.2,
+            "industryName": "其他",
+            "oneIndusty": "003",
+            "per": "6.2%"
+        }
+    ],
+    "isSuccess": true
+}

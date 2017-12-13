@@ -1,0 +1,212 @@
+{
+    "domain": "/mock/",
+    "debug": true,
+    "modules": [
+        {
+            "title": "大商户交易详情",
+            "url": "countDay.json",
+            "component": "table",
+            "sortKey": "cnt",
+            "className": "col-lg-3",
+            "keys": {
+                "mername": "商户名称",
+                "_storeid": "商户ID",
+                "amt": "交易量（万元）",
+                "cnt": "笔数",
+                "fee": "收入（元）"
+            }
+        },
+        {
+            "title": "系统关键数据",
+            "url": "countAll.json",
+            "component": "table",
+            "className": "col-lg-3",
+            "keys": {
+                "code": "业务名称",
+                "amt": "交易量（万元）",
+                "cnt": "笔数",
+                "fee": "收入（元）"
+            },
+            "keysEnum": {
+                "code": {
+                    "1": "总数",
+                    "2": "Mgr",
+                    "3": "payMax"
+                }
+            }
+        },
+        {
+            "title": "各业务关键数据",
+            "url": "countGroup.json",
+            "component": "vtable",
+            "className": "col-lg-6",
+            "mainKey": "code",
+            "keys": {
+                "code": "业务名称",
+                "amt": "交易金额（万元）",
+                "allCnt": "总笔数",
+                "fee": "总收入（元）",
+                "cnt": "成功笔数",
+                "per": "成功率"
+            },
+            "keysEnum": {
+                "code": {
+                    "01": "快捷支付",
+                    "02": "代收支付",
+                    "03": "代付支付",
+                    "04": "批量代收",
+                    "05": "网银",
+                    "06": "跨境全流程",
+                    "07": "跨境后半程"
+                }
+            }
+        },
+        {
+            "type": "separator"
+        },
+        {
+            "title": "交易的商户行业类型分析",
+            "url": "countBusinessType.json",
+            "component": "chart",
+            "className": "col-lg-4",
+            "category": "industryName",
+            "series": [
+                {
+                    "key": "cnt",
+                    "type": "column",
+                    "name": "有效商户数"
+                },
+                {
+                    "key": "dayCnt",
+                    "type": "spline",
+                    "name": "有交易商户数"
+                }
+            ],
+            "chartOptions": null
+        },
+        {
+            "title": "各行业交易量&占比统计（当天）",
+            "url": "countBusinessTypeDay.json",
+            "component": "pieChart",
+            "className": "col-lg-4",
+            "dataKeys": {
+                "name": "industryName",
+                "y": "amt",
+                "per": "per"
+            },
+            "chartOptions": {
+                "plotOptions": {
+                    "pie": {
+                        "dataLabels": {
+                            "format": "{point.name} <br>{point.y}，{point.per}"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "title": "各业务交易量（按月）统计",
+            "url": "countBusinessMonth.json",
+            "component": "chart",
+            "className": "col-lg-4",
+            "category": "month",
+            "seriesByKey": {
+                "groupKey": "code", 
+                "value": {
+                    "key": "amt",
+                    "name": "交易金额（万元）"
+                }
+            },
+            "keysEnum": {
+                "code": {
+                    "01": "快捷支付",
+                    "02": "代收支付",
+                    "03": "代付支付",
+                    "04": "批量代收",
+                    "05": "网银",
+                    "07": "跨境后半程"
+                }
+            },
+            "chartOptions": null
+        },
+        {
+            "type": "separator"
+        },
+        {
+            "title": "交易并发量数据",
+            "url": "countConcurrency.json",
+            "component": "chart",
+            "className": "col-lg-4",
+            "category": "time",
+            "seriesByKey": {
+                "groupKey": "code", 
+                "value": {
+                    "key": "cnt",
+                    "type": "spline",
+                    "name": "交易笔数"
+                }
+            },
+            "keysEnum": {
+                "code": {
+                    "01": "快捷支付",
+                    "02": "代收支付",
+                    "03": "代付支付",
+                    "04": "批量代收",
+                    "05": "网银",
+                    "07": "跨境后半程"
+                }
+            },
+            "chartOptions": null
+        },
+        {
+            "title": "各支付业务交易量对比（周）",
+            "url": "countCrossBorder.json",
+            "component": "pieChart",
+            "className": "col-lg-4",
+            "dataKeys": {
+                "name": "code",
+                "y": "amt",
+                "per": "per"
+            },
+            "keysEnum": {
+                "code": {
+                    "01": "快捷支付",
+                    "02": "代收支付",
+                    "03": "代付支付",
+                    "04": "批量代收",
+                    "05": "网银",
+                    "07": "跨境后半程"
+                }
+            },
+            "chartOptions": {
+                "plotOptions": {
+                    "pie": {
+                        "dataLabels": {
+                            "format": "{point.name} <br>{point.y}"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "title": "交易量&收入对比图",
+            "url": "countYMWeek.json",
+            "component": "chart",
+            "className": "col-lg-4",
+            "category": "pattern",
+            "series": [
+                {
+                    "key": "amt",
+                    "type": "column",
+                    "name": "交易金额（万元）"
+                },
+                {
+                    "key": "fee",
+                    "type": "spline",
+                    "name": "收入"
+                }
+            ],
+            "chartOptions": null
+        }
+    ]
+}
